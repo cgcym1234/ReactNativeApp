@@ -1,0 +1,3 @@
+rootProject.name = 'ReactReduxApp'
+
+include ':app'

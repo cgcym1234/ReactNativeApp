@@ -12,9 +12,13 @@ import React, {
     View,
     Component,
     Image,
-    TouchableHighlight,
+    TextInput,
+    TouchableOpacity,
 } from 'react-native';
 
+var SummaryLayout = require('./ReactSummary/SummaryLayout');
+var SummaryAnimation = require('./ReactSummary/SummaryAnimation');
+var SummaryLifeCycle = require('./ReactSummary/SummaryLifeCycle');
 
 /**
  * 定义了一些应用在控件上的样式。这里定义了
@@ -23,6 +27,8 @@ import React, {
 var styles = StyleSheet.create({
     container: {
         flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center'
     },
     text: {
         color: 'black',
@@ -135,6 +141,6 @@ class HelloWorld extends React.Component {
     }
 }
 
-
-
 AppRegistry.registerComponent('app', () => HelloWorld);
+
+

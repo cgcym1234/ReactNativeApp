@@ -6,9 +6,7 @@
 'use strict';
 
 var React = require('react-native');
-var SummaryLayout = require('./ReactSummary/SummaryLayout');
-var SummaryAnimation = require('./ReactSummary/SummaryAnimation');
-var SummaryLifeCycle = require('./ReactSummary/SummaryLifeCycle');
+
 
 var TitleIndicatorView = require('./MllHome/TitleIndicatorView');
 var YYHorizontalPageView = require('./MllHome/YYHorizontalPageView');

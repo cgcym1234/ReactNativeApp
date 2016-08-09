@@ -10,8 +10,9 @@ import { VisibilityFilters } from './constants'
 /*
  连接到 Redux
 
- 我们需要做出两个变化，将 App 组件连接到 Redux 并且让它能够 dispatch actions 以及
- 从 Redux store 读取到 state。
+ 我们需要做出两个变化，
+ 1. 将 App 组件连接到 Redux 并且让它能够 dispatch actions
+ 2. 从 Redux store 读取到 state。
 
 * */
 class App extends Component {
@@ -23,8 +24,10 @@ class App extends Component {
                 <AddTodo onAddClick={ (text) => dispatch(addTodo(text)) }/>
                 <TodoList
                     todos={visibleTodos}
-                    onTodoClick={ index =>
-                        dispatch(completeTodo(index))
+                    onTodoClick={ index => {
+                        dispatch(completeTodo(index));
+
+                        }
                     }/>
                 <Footer
                     filter={visibilityFilter}

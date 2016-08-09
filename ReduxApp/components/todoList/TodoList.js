@@ -49,7 +49,7 @@ export default class TodoList extends Component {
                 {...rowData}
                 key={index}
                 style={styles.row}
-                onClick={ () => this.props.onTodoClick(index) }
+                onClick={ () => { this.props.onTodoClick(index); console.log(index);} }
                 />
         );
     }

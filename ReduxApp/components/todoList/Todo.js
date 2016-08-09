@@ -35,7 +35,7 @@ export default class Todo extends Component {
         return (
             <TouchableHighlight
                 style={styles.row}
-                onPress={(e) => this.props.onClick}
+                onPress={(e) => { this.props.onClick(); } }
                 underlayColor='#dddddd'>
                 <View>
                     <Text style={{
@@ -55,6 +55,7 @@ Todo.propTypes = {
     text: PropTypes.string.isRequired,
     completed: PropTypes.bool.isRequired
 };
+
 
 
 
